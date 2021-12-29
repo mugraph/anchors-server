@@ -6,6 +6,10 @@ import (
 		"github.com/google/uuid"
 )
 
+// Define Scene DB Model
+// Properties belongs to Scene
+// Scene by has many Layers
+// Content belongs to Scene
 type Scene struct {
 	ID uuid.UUID `json:"id" gorm:"type:uuid;default:gen_random_uuid()"`
 	// attributes
@@ -18,6 +22,7 @@ type Scene struct {
 	Content *Content `json:"content" gorm:"constraint:OnUpdate:CASCADE,OnDelete:CASCADE;"`
 }
 
+// Return JSON from Scene DB Model
 func (s *Scene) GetJSON() *SceneJSON {
 	return &SceneJSON{
 		ID: s.ID,
@@ -30,6 +35,7 @@ func (s *Scene) GetJSON() *SceneJSON {
 	}
 }
 
+// Define Scene in JSON format
 type SceneJSON struct {
 	ID uuid.UUID `json:"uuid"`
 	Type string `json:"type"`
@@ -40,6 +46,7 @@ type SceneJSON struct {
 	Content *Content `json:"content"`
 }
 
+// Return Scene DB Model from Scene JSON
 func (s *SceneJSON) GetModel() *Scene {
 	return &Scene{
 		ID: s.ID,
@@ -56,6 +63,7 @@ type Point struct {
 	Y float64
 }
 
+// Return GeometryJSON from Point DB Model
 func (p *Point) GetJSON() *GeometryJSON {
 	return &GeometryJSON{
 		Type: "Point",
@@ -63,11 +71,13 @@ func (p *Point) GetJSON() *GeometryJSON {
 	}
 }
 
+// Define Geometry in JSON format
 type GeometryJSON struct {
 	Type string `json:"type"`
 	Coordinates []float64 `json:"coordinates"`
 }
 
+// Return Point DB Model from GeometryJSON
 func (g *GeometryJSON) GetPoint() Point {
 	return Point{
 		X: g.Coordinates[0],
@@ -75,7 +85,8 @@ func (g *GeometryJSON) GetPoint() Point {
 	}
 }
 
-
+// Define Properties DB Model
+// Belongs to Scene
 type Properties struct {
 	ID uuid.UUID `json:"-" gorm:"type:uuid;default:gen_random_uuid()"`
 	// attributes
@@ -86,6 +97,8 @@ type Properties struct {
 	FlyToOptions *FlyToOptions `json:"flyToOptions,omitempty", gorm:"contraint:OnUpdate:CASCASE,OnDelete:CASCADE;"`
 }
 
+// Define FlyToOptions DB Model
+// Belongs to Properties
 type FlyToOptions struct {
 	ID uuid.UUID `json:"-" gorm:"type:uuid;default:gen_random_uuid()"`
 	// attributes
@@ -93,6 +106,9 @@ type FlyToOptions struct {
 	EaseLinearity float64 `json:"easeLinearity" gorm:"default:0.2" example:"0.2"`
 }
 
+// Define Layer DB Model
+// Scene has many Layers
+// SceneID is the foreign key
 type Layer struct {
 	ID uuid.UUID `json:"-" gorm:"type:uuid;default:gen_random_uuid()"`
 	// attributes
@@ -102,6 +118,8 @@ type Layer struct {
 	LayerOptions *LayerOptions `json:"layerOptions,omitempty", gorm:"contraint:OnUpdate:CASCASE,OnDelete:CASCADE;"`
 }
 
+// Define LayerOptions DB Model
+// Belongs to Layer
 type LayerOptions struct {
 	ID uuid.UUID `json:"-" gorm:"type:uuid;default:gen_random_uuid()"`
 	// attributes
@@ -112,6 +130,9 @@ type LayerOptions struct {
 	Info bool `json:"info"`
 }
 
+// Define Content DB Model
+// Belongs to Scene
+// Content has many Resources
 type Content struct {
 	ID uuid.UUID `json:"-" gorm:"type:uuid;default:gen_random_uuid()"`
 	// attributes
@@ -121,6 +142,9 @@ type Content struct {
 	Resources []*Resource `json:"resources"`
 }
 
+// Define Resource
+// Content has many Resources
+// ContentID is the foreign key
 type Resource struct {
 	ID uuid.UUID `json:"-" gorm:"type:uuid;default:gen_random_uuid()"`
 	// attributes
@@ -133,4 +157,3 @@ type Resource struct {
 	Length uint `json:"length,omitempty"`
 	TargetUUID *uuid.UUID `json:"targetUUID,omitempty"`
 }
-

@@ -30,30 +30,35 @@ type FeatureCollection struct {
 	Features []SceneJSON `json:"features"`
 }
 
-type Geometry struct {
-	Type string `json:"type"`
-	Coordinates [2]float64 `json:"coordinates"`
-}
-
 func Populate(database *gorm.DB) {
 
+	// Open json file
 	jsonFile, err := os.Open("data/scenes-test.json")
+	// If we os.Open returns an error then handle it
 	if err != nil {
 		fmt.Println(err)
 	}
 	fmt.Println("Successfully Opened scenes.json")
+	
+	// Defer the closing of our jsonFile so that we can parse it later on
 	defer jsonFile.Close()
 
+	// Read the opened file as byte array
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 
+	// Initialize 'featureCollection' array
 	var featureCollection FeatureCollection
 	
+	// Unmarshal byte array, containing our json content into 'featureCollection'
 	json.Unmarshal(byteValue, &featureCollection)
 
+	// Iterate over all features in 'featureCollection'
 	for _, f := range featureCollection.Features {
+		// Marshal features back to json and print them 
 		data, _ := json.Marshal(f)
 	 	fmt.Printf("json: %s\n\n", data)
 
+		// Add Model Representation of each feature or 'scene' to Database
 		database.Create(f.GetModel())
 	}
 }

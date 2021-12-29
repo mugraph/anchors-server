@@ -16,6 +16,8 @@ type CreateSceneInput struct {
 
 func FindScenes(c *gin.Context) {
 	var scenes []models.Scene
+	// Preload associated Models
+	// Find Scenes
 	models.DB.
 	Preload("Properties.FlyToOptions").
 	Preload("Layers").
