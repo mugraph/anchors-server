@@ -4,13 +4,11 @@ import (
 	"net/http"
 	"github.com/gin-gonic/gin"
 	"github.com/janebuoy/anchors-server/models"
-	//"github.com/twpayne/go-geom/encoding/geojson"
 )
 
 type CreateSceneInput struct {
 	CommonName string `json:"common_name" binding:"required"`
 	Type string `json:"type" binding:"required"`
-	//Geometry geojson.Geometry `json:"geometry" binding:"required"`
 }
 
 // GET /scenes
@@ -18,9 +16,26 @@ type CreateSceneInput struct {
 
 func FindScenes(c *gin.Context) {
 	var scenes []models.Scene
-	models.DB.Find(&scenes)
+	models.DB.
+	Preload("Properties.FlyToOptions").
+	Preload("Layers").
+	Preload("Content.Resources").
+	Find(&scenes)
 
-	c.JSON(http.StatusOK, gin.H{"data": scenes})
+	data := make([]*models.SceneJSON, len(scenes))
+	for i, s := range scenes {
+		data[i] = s.GetJSON()
+	}
+
+	resp := struct {
+		Type string `json:"type"`
+		Scenes []*models.SceneJSON `json:"features"`
+	} {
+		Type: "FeatureCollection",
+		Scenes: data,
+	}
+
+	c.JSON(http.StatusOK, gin.H{"data": resp})
 }
 
 // GET /properties
@@ -43,7 +58,7 @@ func CreateScene(c *gin.Context) {
 	}
 
 	// Create Scene
-	scene := models.Scene{CommonName: input.CommonName, Type: input.Type}
+	scene := models.Scene{CommonName: input.CommonName}
 	models.DB.Create(&scene)
 
 	c.JSON(http.StatusOK, gin.H{"data": scene})
