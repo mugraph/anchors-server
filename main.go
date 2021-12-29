@@ -15,7 +15,5 @@ func main() {
 	r.GET("/scenes", controllers.FindScenes)
 	r.POST("/scenes", controllers.CreateScene)
 
-	r.GET("/properties", controllers.FindProperties)
-
 	r.Run()
 }

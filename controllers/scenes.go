@@ -35,17 +35,7 @@ func FindScenes(c *gin.Context) {
 		Scenes: data,
 	}
 
-	c.JSON(http.StatusOK, gin.H{"data": resp})
-}
-
-// GET /properties
-// Get all properties
-
-func FindProperties(c *gin.Context) {
-	var properties []models.Properties
-	models.DB.Find(&properties)
-
-	c.JSON(http.StatusOK, gin.H{"data": properties})
+	c.JSON(http.StatusOK, resp)
 }
 
 // POST /scenes
@@ -61,5 +51,5 @@ func CreateScene(c *gin.Context) {
 	scene := models.Scene{CommonName: input.CommonName}
 	models.DB.Create(&scene)
 
-	c.JSON(http.StatusOK, gin.H{"data": scene})
+	c.JSON(http.StatusOK, scene)
 }

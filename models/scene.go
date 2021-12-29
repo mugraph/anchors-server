@@ -31,7 +31,7 @@ func (s *Scene) GetJSON() *SceneJSON {
 }
 
 type SceneJSON struct {
-	ID uuid.UUID `json:"id"`
+	ID uuid.UUID `json:"uuid"`
 	Type string `json:"type"`
 	CommonName string `json:"common_name" example:"oeverseehabenbecken"`
 	Geometry *GeometryJSON `json:"geometry"`
