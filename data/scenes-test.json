@@ -3,6 +3,7 @@
 	"features": [
 		{
 			"type": "Feature",
+			"is_main": true,
 			"uuid": "54eadfa2-bc39-4d86-ad84-37660d24f513",
 			"common_name": "oeverseehabenbecken",
 			"properties": {
@@ -85,6 +86,7 @@
 		},
 		{
 			"type": "Feature",
+			"is_main": true,
 			"uuid": "79352564-8334-11eb-8dcd-0242ac130003",
 			"common_name": "koloniale_infrastrukturen",
 			"properties": {
@@ -151,6 +153,7 @@
 		},
 		{
 			"type": "Feature",
+			"is_main": true,
 			"uuid": "d86f9abe-8334-11eb-8dcd-0242ac130003",
 			"common_name": "baumwollhandel",
 			"properties": {
@@ -248,6 +251,7 @@
 		},
 		{
 			"type": "Feature",
+			"is_main": true,
 			"uuid": "4745a0a0-8335-11eb-8dcd-0242ac130003",
 			"common_name": "kaffeehandel",
 			"properties": {
@@ -338,6 +342,7 @@
 		},
 		{
 			"type": "Feature",
+			"is_main": true,
 			"uuid": "98390290-8335-11eb-8dcd-0242ac130003",
 			"common_name": "koloniale_straszennamen",
 			"properties": {
@@ -408,6 +413,295 @@
 						"type": "audio",
 						"length": 2
 					}
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"is_main": false,
+			"uuid": "7e854e4a-8334-11eb-8dcd-0242ac130003",
+			"common_name": "colonization_timeline_scene",
+			"properties": {
+				"title": "Colonization Timeline",
+				"zoom": 2,
+				"flyTo": true,
+				"flyToOptions": {
+					"duration": 0.3,
+					"easeLinearity": 0.2
+				}
+			},
+			"layers": [
+				{
+					"name": "colonies"
+				}
+			],
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					16.3642108,
+					3.6523678
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"is_main": false,
+			"uuid": "8808cb18-8334-11eb-8dcd-0242ac130003",
+			"common_name": "waterlevels_scene",
+			"properties": {
+				"title": "Aktuelle Pegelstände",
+				"zoom": 12,
+				"flyTo": true,
+				"flyToOptions": {
+					"duration": 1.5,
+					"easeLinearity": 0.2
+				}
+			},
+			"layers": [
+				{
+					"name": "waterLevels",
+					"layerOptions": {
+						"type": "WaterLevelsLayer",
+						"selector": false,
+						"info": false
+					}
+				}
+			],
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					8.71221,
+					53.11979
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"is_main": false,
+			"uuid": "d6973382-a4c2-473e-86dd-8ee9444328e2",
+			"common_name": "river_correction_scene",
+			"properties": {
+				"title": "Weserkorrektion",
+				"zoom": 14,
+				"maxZoom": 14,
+				"minZoom": 12,
+				"flyTo": true,
+				"flyToOptions": {
+					"duration": 1.5,
+					"easeLinearity": 0.2
+				},
+				"opacitySlider": true
+			},
+			"layers": [
+				{
+					"name": "riverCorrection",
+					"layerOptions": {
+						"short": "river",
+						"type": "RasterLayer",
+						"selector": "OpacitySlider",
+						"info": "LayerInfo",
+						"url": "/data/tiles/{z}/{x}/{-y}.png"
+					}
+
+				}
+			],
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					8.7238,
+					53.1127
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"is_main": false,
+			"uuid": "1ab4447e-8335-11eb-8dcd-0242ac130003",
+			"common_name": "cotton_scene",
+			"properties": {
+				"title": "Baumwollbezüge",
+				"zoom": 11,
+				"flyTo": true,
+				"flyToOptions": {
+					"duration": 1.5,
+					"easeLinearity": 0.2
+				},
+				"cottonLayerSelector": true
+			},
+			"layers": [
+				{
+					"name": "cotton",
+					"layerOptions": {
+						"type": "PointsLayer",
+						"short": "cotton",
+						"selector": "LayerSelector",
+						"info": "LayerInfo"
+					}
+				}
+			],
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					8.7564,
+					53.1168
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"is_main": false,
+			"uuid": "8f4785da-8335-11eb-8dcd-0242ac130003",
+			"common_name": "coffee_bremen_scene",
+			"properties": {
+				"title": "Kaffee in Bremen",
+				"zoom": 12,
+				"flyTo": true,
+				"flyToOptions": {
+					"duration": 1.5,
+					"easeLinearity": 0.2
+				}
+			},
+			"layers": [
+				{
+					"name": "coffeeBremen",
+					"layerOptions": {
+						"type": "PointsLayer",
+						"short": "coffeeBremen",
+						"selector": false
+					}
+				}
+			],
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					8.83,
+					53.075
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"is_main": false,
+			"uuid": "75e49e48-8335-11eb-8dcd-0242ac130003",
+			"common_name": "coffee_world_scene",
+			"properties": {
+				"title": "Kaffeeanbau und Kolonialismus",
+				"zoom": 2,
+				"flyTo": true,
+				"flyToOptions": {
+					"duration": 1.5,
+					"easeLinearity": 0.2
+				}
+			},
+			"layers": [
+				{
+					"name": "coffeeWorld",
+					"layerOptions": {
+						"type": "MultiPatternLayer",
+						"short": "coffeeWorld",
+						"selector": false
+					}
+				}
+			],
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					16.0,
+					16.9
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"is_main": false,
+			"uuid": "c5b54012-8335-11eb-8dcd-0242ac130003",
+			"common_name": "streets_scene",
+			"properties": {
+				"title": "Straßen mit Kolonialbezug",
+				"zoom": 13,
+				"flyTo": true,
+				"flyToOptions": {
+					"duration": 1.5,
+					"easeLinearity": 0.2
+				}
+			},
+			"layers": [
+				{
+					"name": "streets",
+					"layerOptions": {
+						"type": "PointsLayer",
+						"short": "streets",
+						"selector": false
+					}
+				}
+			],
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					8.772,
+					53.1
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"is_main": false,
+			"uuid": "62eb9e16-0290-4c15-a1d5-44f753d21ed0",
+			"common_name": "development_scene",
+			"properties": {
+				"title": "Entwicklung der Bremer Häfen",
+				"zoom": 13,
+				"flyTo": true,
+				"flyToOptions": {
+					"duration": 1.5,
+					"easeLinearity": 0.2
+				},
+				"portDevelopmentLayerSelector": true
+			},
+			"layers": [
+				{
+					"name": "ports",
+					"layerOptions": {
+						"source": "data/json/ports.json",
+						"type": "MultiPatternLayer",
+						"short": "ports",
+						"selector": "LayerSelector",
+						"info": "LayerInfo"
+					}
+				}
+			],
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					8.7664,
+					53.0968
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"is_main": false,
+			"uuid": "7affe3f9-08bc-4ae6-bde8-2e8816ba4f1b",
+			"common_name": "coffee_timeline_scene",
+			"properties": {
+				"title": "Coffee Timeline",
+				"zoom": 14,
+				"flyTo": true,
+				"flyToOptions": {
+					"duration": 1.5,
+					"easeLinearity": 0.2
+				}
+			},
+			"layers": [
+				{
+					"name": "colonies"
+				}
+			],
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					8.7786128,
+					53.0898095
 				]
 			}
 		}

@@ -19,7 +19,8 @@ type Scene struct {
 	Point Point `json:"-" gorm:"embedded;embeddedPrefix:point_"`
 	Layers []*Layer  `json:"layers" gorm:"constraint:OnUpdate:CASCADE,OnDelete:CASCADE;"`
 	ContentID *uuid.UUID `json:"-" gorm:"type:uuid"`
-	Content *Content `json:"content" gorm:"constraint:OnUpdate:CASCADE,OnDelete:CASCADE;"`
+	Content *Content `json:"content,omitempty" gorm:"constraint:OnUpdate:CASCADE,OnDelete:CASCADE;"`
+	IsMain bool `json:"is_main"`
 }
 
 // Return JSON from Scene DB Model
@@ -32,6 +33,7 @@ func (s *Scene) GetJSON() *SceneJSON {
 		Geometry: s.Point.GetJSON(),
 		Layers: s.Layers,
 		Content: s.Content,
+		IsMain: s.IsMain,
 	}
 }
 
@@ -43,7 +45,8 @@ type SceneJSON struct {
 	Geometry *GeometryJSON `json:"geometry"`
 	Properties *Properties `json:"properties"`
 	Layers []*Layer `json:"layers"`
-	Content *Content `json:"content"`
+	Content *Content `json:"content,omitempty"`
+	IsMain bool `json:"is_main"`
 }
 
 // Return Scene DB Model from Scene JSON
@@ -55,6 +58,7 @@ func (s *SceneJSON) GetModel() *Scene {
 		Point: s.Geometry.GetPoint(),
 		Layers: s.Layers,
 		Content: s.Content,
+		IsMain: s.IsMain,
 	}
 }
 
@@ -123,11 +127,12 @@ type Layer struct {
 type LayerOptions struct {
 	ID uuid.UUID `json:"-" gorm:"type:uuid;default:gen_random_uuid()"`
 	// attributes
-	Source string `json:"source"`
-	Type string `json"type"`
-	Short string `json:"short"`
-	Selector bool `json:"selector"`
-	Info bool `json:"info"`
+	Source string `json:"source,omitempty"`
+	Type string `json:"type,omitempty"`
+	Short string `json:"short,omitempty"`
+	Selector string `json:"selector,omitempty"`
+	Info string `json:"info,omitempty"`
+	URL string `json:"url,omitempty"`
 }
 
 // Define Content DB Model

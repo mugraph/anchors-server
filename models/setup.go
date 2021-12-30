@@ -23,7 +23,11 @@ func ConnectDatabase() {
 	database.AutoMigrate(&Scene{}, &Properties{}, &FlyToOptions{}, &Layer{}, &LayerOptions{}, &Content{}, &Resource{})
 
 	DB = database
-	Populate(database)
+	sceneCount := int64(0)
+	database.Model(&Scene{}).Count(&sceneCount)
+	if sceneCount == 0 {
+		Populate(database)
+	}
 }
 
 type FeatureCollection struct {
