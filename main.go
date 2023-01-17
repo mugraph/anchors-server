@@ -3,17 +3,38 @@ package main
 import (
 	//"net/http"
 	"github.com/gin-gonic/gin"
-	"github.com/janebuoy/anchors-server/controllers"
-	"github.com/janebuoy/anchors-server/models"
+	"github.com/mugraph/anchors-server/controllers"
+	"github.com/mugraph/anchors-server/models"
 )
 
+func CORSMiddleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
+		c.Writer.Header().Set("Access-Control-Allow-Credentials", "true")
+		c.Writer.Header().Set("Access-Control-Allow-Headers", "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With")
+		c.Writer.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS, GET, PUT")
+
+		if c.Request.Method == "OPTIONS" {
+			c.AbortWithStatus(204)
+			return
+		}
+
+		c.Next()
+	}
+}
+
 func main() {
-	r := gin.Default()
+	router := gin.New()
+	router.Use(CORSMiddleware())
 
 	models.ConnectDatabase()
 
-	r.GET("/scenes", controllers.FindScenes)
-	r.POST("/scenes", controllers.CreateScene)
+	router.GET("/chapters", controllers.FindChapters)
+	router.POST("/chapters", controllers.CreateChapter)
 
-	r.Run()
+	router.GET("/tours", controllers.FindTours)
+	router.GET("/tour/:id", controllers.FindTour)
+	router.GET("/parent/:id", controllers.FindParent)
+
+	router.Run()
 }

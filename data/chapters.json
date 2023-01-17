@@ -1,0 +1,320 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "uuid": "65203ec9-e23e-4b83-ab3f-3e7b5b0398ba",
+      "tour_id": "fb54784c-b184-4d8e-9071-b10ac9f2a6e0",
+      "type": "Feature",
+      "common_name": "fortezza_medicea",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.32335113754067, 43.322213227]
+      },
+      "properties": {
+        "uuid": "2ba0fa88-2c3e-476e-b6b4-5ceab5c64cef",
+        "title": "Fortezza Medicea",
+        "description": "The Fortezza Medicea is a historical fortress located in Siena, Italy. It was built in the 16th century by the Medici family and offers panoramic views of the city. It's a great place to learn about the history of Siena and the Medici family and to see the city from a different perspective."
+      }
+    },
+    {
+      "uuid": "9872b8a4-0ac6-41f4-b203-5cf243259b1f",
+      "tour_id": "fb54784c-b184-4d8e-9071-b10ac9f2a6e0",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.33, 43.317]
+      },
+      "properties": {
+        "uuid": "66dd3987-c365-4d77-b8c8-d6915916f1b7",
+        "title": "Basilica di San Domenico",
+        "description": "This 14th century church is home to the relics of Saint Catherine of Siena, a famous mystic and saint who was born and lived in Siena. It's a great place for those interested in religious history and art."
+      }
+    },
+    {
+      "uuid": "6594521f-7bf7-4851-a32a-143f4a69f6cb",
+      "tour_id": "74a90ac2-b0d9-49d3-a7df-93a2bcabecaf",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.577997929291314, 50.64760066741579]
+      },
+      "properties": {
+        "uuid": "04c56b50-657f-4ed9-8acb-731b085769f7",
+        "title": "Montagne de Bueren",
+        "description": "This hill offers a panoramic view of the city of Liege and its landmarks. At the top, there is a staircase with 374 steps that lead to the summit, it is a must-see for anyone visiting Liege. The staircase, designed by a local architect in the 19th century, is considered one of the most impressive in the world and offers a great opportunity for a workout and a great view of the city."
+      }
+    },
+    {
+      "uuid": "7ee3ab4b-72ed-4e39-ad8f-2de4db13c130",
+      "tour_id": "74a90ac2-b0d9-49d3-a7df-93a2bcabecaf",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.589667354623799, 50.642003395977554]
+      },
+      "properties": {
+        "uuid": "e51689a5-a082-4df4-98a4-ececdf04dcd7",
+        "title": "Liège Hackerpace",
+        "description": "A community-run organization that provides a physical space for people to gather, share knowledge, and work on projects related to technology. A unique and interesting place to visit for anyone who enjoys technology and innovation."
+      }
+    },
+    {
+      "uuid": "81503794-2843-4930-abed-3f31b5565a5b",
+      "tour_id": "74a90ac2-b0d9-49d3-a7df-93a2bcabecaf",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.582775821083089, 50.64013967345849]
+      },
+      "properties": {
+        "uuid": "64add6e7-c6b4-474c-9f0e-2191968eb481",
+        "title": "Rue Roture",
+        "description": "This picturesque street is known for its architecture and historical significance. Many of the buildings on the street date back to the 18th and 19th centuries. It's a great place to take a stroll, admire the beautiful facades, and learn more about the history of the city."
+      }
+    },
+    {
+      "uuid": "6efe7b5d-bfeb-40d9-b256-a8fd05f7a7a6",
+      "tour_id": "74a90ac2-b0d9-49d3-a7df-93a2bcabecaf",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.568059764456052, 50.64321573659632]
+      },
+      "properties": {
+        "uuid": "d9840b23-dc7a-4109-a203-d04c91b2f7cc",
+        "title": "RAVel Meuse sous Pont Kennedy",
+        "description": "This scenic route follows the river Meuse, offering a peaceful and picturesque way to explore the city of Liege. The route passes under the Pont Kennedy, a modern bridge that offers great views of the city. It's a great place for a walk or bike ride and to enjoy the nature."
+      }
+    },
+    {
+      "uuid": "c7bde3b8-3ca8-4800-9ee7-ef176f5a4120",
+      "tour_id": "74a90ac2-b0d9-49d3-a7df-93a2bcabecaf",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.576997483663064, 50.627844838210166]
+      },
+      "properties": {
+        "uuid": "bbf5156c-61e4-4aeb-ada6-bd5716dc2c9b",
+        "title": "Part de la Boverie",
+        "description": "Offering a peaceful escape from the city, this beautiful park features a variety of different gardens, including a rose garden, a Japanese garden, and a butterfly garden. The park also includes La Boverie, a museum that showcases art, history and culture. The museum has a rich collection of art, including works by famous Belgian artists such as James Ensor and Paul Delvaux. Additionally, it features temporary exhibitions and special events throughout the year, making it a great destination for art lovers. The museum is located inside the park, providing visitors with the opportunity to enjoy both the art and the beautiful nature of the park."
+      }
+    },
+    {
+      "uuid": "09c60433-1181-479b-8882-c1ec354782ed",
+      "tour_id": "74a90ac2-b0d9-49d3-a7df-93a2bcabecaf",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.567172315444651, 50.624780073748525]
+      },
+      "properties": {
+        "uuid": "85f35f69-1c91-4753-832f-a8c5f15ab65b",
+        "title": "Liège-Guillemins",
+        "description": "The Liège-Guillemins railway station, designed by the famous architect Santiago Calatrava, is a modern and impressive building that is worth visiting. It's considered one of the most beautiful railway stations in the world, with its unique and futuristic design, it's a must-see for anyone visiting Liege"
+      }
+    },
+    {
+      "uuid": "e16abb71-53ab-4a35-8970-fe60f7c2b32e",
+      "tour_id": "74a90ac2-b0d9-49d3-a7df-93a2bcabecaf",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.568059764456052, 50.64321573659632]
+      },
+      "properties": {
+        "uuid": "4b08277f-f4fb-480e-bab3-fed9100d4036",
+        "title": "La Cité Miroir",
+        "description": "La Cité Miroir offers a variety of events and activities, including exhibitions, concerts, and conferences. It's a great place to learn about the local culture and participate in the cultural life of the city. It features an auditorium, a concert hall, and a theater, as well as exhibition spaces showcasing contemporary art and cultural events. The center also provides an opportunity to explore the history of Liege, with a permanent exhibition dedicated to the city's past and present."
+      }
+    },
+    {
+      "uuid": "64c5ddb7-dd8a-4bba-bcc4-b433dbd07ce4",
+      "tour_id": "532f45a1-1149-4df9-a36c-19096d0e50c6",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.5495326, 47.2161663]
+      },
+      "properties": {
+        "uuid": "a8ccee12-7e1e-4af7-a725-7b64ac3004e9",
+        "title": "Château des Ducs de Bretagne",
+        "description": "Explore the rich history and architecture of the Château des Ducs de Bretagne, a formidable fortress that served as the residence of the Dukes of Brittany for centuries."
+      }
+    },
+    {
+      "uuid": "502cfcff-67e0-4d28-996a-0e9b36162da8",
+      "tour_id": "532f45a1-1149-4df9-a36c-19096d0e50c6",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.56698, 47.21483]
+      },
+      "properties": {
+        "uuid": "d5ae1c33-6d0d-465d-82ad-148e2859e966",
+        "title": "Machines de l'Île",
+        "description": "Experience the innovation and imagination of the Machines de l'Île, an art installation that showcases the city's industrial heritage through whimsical mechanical sculptures."
+      }
+    },
+    {
+      "uuid": "e74ac740-58c6-45c4-a950-fed01214161d",
+      "tour_id": "532f45a1-1149-4df9-a36c-19096d0e50c6",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.577527, 47.2016777]
+      },
+      "properties": {
+        "uuid": "b2691387-cddd-4c8e-8bc2-f7122761768c",
+        "title": "Musée Jules Verne",
+        "description": "Discover the man behind the legend at the Musée Jules Verne, dedicated to the famous science fiction author who was born in Nantes."
+      }
+    },
+    {
+      "uuid": "1b245dc0-a453-420f-a55f-ee3d2a188d27",
+      "tour_id": "532f45a1-1149-4df9-a36c-19096d0e50c6",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.5738166, 47.2002244]
+      },
+      "properties": {
+        "uuid": "3d26324c-6f35-4203-8117-1351e05d08ee",
+        "title": "Frac des Pays de la Loire",
+        "description": "Discover the contemporary art at Frac des Pays de la Loire, a modern art museum located opposite the Musée Jules Verne on the other bank of the Loire. The museum boasts a collection of contemporary art that includes works by renowned artists from the region and beyond. It also features temporary exhibitions, workshops, and guided tours that allow visitors to engage with the art in an interactive and meaningful way. The museum's architecture and design, which was created by renowned architect Jean Nouvel, is also noteworthy. The Frac des Pays de la Loire is not just a museum but a cultural hub that brings together art, education, and community. It's the perfect destination for art lovers and anyone looking for an enriching cultural experience."
+      }
+    },
+    {
+      "uuid": "efd6f36d-4c38-4f6c-9019-e3a9707a93fd",
+      "tour_id": "532f45a1-1149-4df9-a36c-19096d0e50c6",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.5682534, 47.2062051]
+      },
+      "properties": {
+        "uuid": "7151c362-3582-4c55-8d85-b63615d3aee8",
+        "title": "Parc des Chantiers",
+        "description": "Explore the city's industrial heritage and natural beauty at the Parc des Chantiers, where you will find the remains of the shipyards that once dominated the city's economy."
+      }
+    },
+    {
+      "uuid": "2f218cc3-ec49-41c8-912a-77235abc1d62",
+      "tour_id": "532f45a1-1149-4df9-a36c-19096d0e50c6",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.5596096, 47.2134532]
+      },
+      "properties": {
+        "uuid": "de96b621-e2f3-4cc8-9321-20e392e25538",
+        "title": "Passage Pommeraye",
+        "description": "Discover the elegance and rich history of Passage Pommeraye, an impressive 19th-century shopping arcade in Nantes."
+      }
+    },
+    {
+      "uuid": "1f36572f-7503-44f7-a6be-ac8b45a1b8de",
+      "tour_id": "532f45a1-1149-4df9-a36c-19096d0e50c6",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.5585003, 47.2144832]
+      },
+      "properties": {
+        "uuid": "941adc74-7df1-4cad-b94a-84aa4170b9d3",
+        "title": "Place Royale",
+        "description": "Appreciate the beauty and history of Nantes at the Place Royale, a beautiful square home to the Église Notre-Dame-de-Bon-Port, one of the most beautiful churches in Nantes."
+      }
+    },
+    {
+      "uuid": "f07e4e5f-3928-45ab-ac5d-fb196108bff5",
+      "tour_id": "fb54784c-b184-4d8e-9071-b10ac9f2a6e0",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.3267184, 43.3177019]
+      },
+      "properties": {
+        "uuid": "66ef2124-02a4-459d-8397-9448b64307a6",
+        "title": "Duomo di Siena",
+        "description": "A stunning cathedral that dates back to the 12th century, known for its beautiful marble floor inlay and its artwork, including sculptures and frescoes. Biblioteca Piccolomini is a beautiful library located inside the cathedral, known for its frescoes by Pinturicchio depicting the life of Pope Pius II, a native of Siena."
+      }
+    },
+    {
+      "uuid": "a7772da1-dd96-4533-81c5-cfc7c6df53d6",
+      "tour_id": "fb54784c-b184-4d8e-9071-b10ac9f2a6e0",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.3294357, 43.3176294]
+      },
+      "properties": {
+        "uuid": "816aaa38-04ee-4db2-a9ed-19cb1e7d963f",
+        "title": "Museo dell'Opera Metropolitana",
+        "description": "A museum that houses some of the best artworks from the Sienese school, including masterpieces by Duccio and Simone Martini, as well as an impressive collection of sacred art."
+      }
+    },
+    {
+      "uuid": "d1192689-f7d8-48e8-8204-fd42c5261a6d",
+      "tour_id": "fb54784c-b184-4d8e-9071-b10ac9f2a6e0",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.33054251682887, 43.31252546484936]
+      },
+      "properties": {
+        "uuid": "617b4c70-cf74-4ab8-8288-c6f50af59a0c",
+        "title": "Orto Botanico dell'Università di Siena",
+        "description": "The Botanical Garden of Siena is a beautiful garden located on the slopes of the hill that overlooks the city. It features a wide variety of plant species from all over the world, making it a great place for nature lovers and those interested in botany."
+      }
+    },
+    {
+      "uuid": "cfd48207-b78c-4eb6-9fd7-76f831fd5ff0",
+      "tour_id": "fb54784c-b184-4d8e-9071-b10ac9f2a6e0",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.33021609885094, 43.320039318808654]
+      },
+      "properties": {
+        "uuid": "9bc34f1f-ce51-438e-bdf3-aaed17bb80c7",
+        "title": "Strade Bianche",
+        "description": "Strade Bianche is a one-day professional road bicycle race in Tuscany, Italy. The race is characterized by the use of dirt roads, or 'white roads' that give the race its name. The finale of the race takes place in the historic center of Siena, where riders will race through the narrow streets and finish in the famous Piazza del Campo. The race is usually held in the early spring, typically in March, making it a perfect time to visit Siena and witness the beauty of the Tuscan countryside in full bloom. The pitoresque Via Santa Caterina is a challenging climb towards the end of the race at an average gradient of 13.9%, peaking up to 32.7%. Up here, participants take one of the last turns before catching sight of the jubilating crowds at the Piazza del Campo."
+      }
+    },
+    {
+      "uuid": "499d0991-7aa9-4af6-af85-f13704b3fc34",
+      "tour_id": "fb54784c-b184-4d8e-9071-b10ac9f2a6e0",
+      "type": "Feature",
+      "common_name": "",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.331514, 43.318505]
+      },
+      "properties": {
+        "uuid": "3c7b1636-022a-429a-9cfb-9f9cd03e85b7",
+        "title": "Piazza del Campo",
+        "description": "The main square in Siena, known for its shell shape and for being the site of the Palio, a horse race that takes place twice a year. Next to the square towers the Torre del Mangia, a 14th-century tower that offers panoramic views of the city. Next door a beautiful medieval building, Palazzo Pubblico, the town hall of Siena. It houses the Civic Museum, which showcases the art and history of the city."
+      }
+    }
+  ]
+}
