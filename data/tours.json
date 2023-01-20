@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "fb54784c-b184-4d8e-9071-b10ac9f2a6e0",
+      "properties": {
+        "title": "Siena",
+        "description": "This audio tour of Siena offers a unique and immersive experience that takes you through the heart of this picturesque Tuscan city. The tour starts off at the iconic Piazza del Campo, where you'll be transported back in time to the medieval era as you take in the unique shell shape of the square and learn about the famous Palio horse race that takes place here twice a year. You'll also get to climb the Torre del Mangia, a 14th-century tower that offers breathtaking panoramic views of the city.\n Next, you'll visit the Duomo di Siena, a stunning 12th-century cathedral known for its beautiful marble floor inlays and breathtaking artwork, including sculptures and frescoes. Inside the cathedral, you'll find the Biblioteca Piccolomini, a beautiful library that houses frescoes depicting the life of Pope Pius II, a native of Siena. The tour also includes a visit to the Strade Bianche, a one-day professional road bicycle race in Tuscany, where you'll witness the beauty of the Tuscan countryside in full bloom and the pitoresque Via Santa Caterina, a challenging climb towards the end of the race at an average gradient of 13.9%, peaking up to 32.7%.\n You will also visit the Basilica di San Domenico, which houses the relics of Saint Catherine of Siena, a famous mystic and saint who was born and lived in Siena, and the Museo dell'Opera Metropolitana, which houses some of the best artworks from the Sienese school, including masterpieces by Duccio and Simone Martini, as well as an impressive collection of sacred art. This tour is perfect for history buffs, art lovers, and anyone who wants to experience the unique culture and atmosphere of Siena. Whether you're an experienced traveler or a first-time visitor, this tour will leave you with a deeper appreciation for the beauty and history of this timeless city."
+      },
+      "geometry": {
+        "coordinates": [11.331514, 43.318505],
+        "type": "Point"
+      }
+    },
+    {
+      "id": "532f45a1-1149-4df9-a36c-19096d0e50c6",
+      "properties": {
+        "title": "Nantes",
+        "description": "Welcome to Nantes, a city steeped in history, culture, and innovation. This audio tour will offer you a unique and immersive experience as we delve into the many facets of this vibrant metropolis.\n We will begin our journey at the Château des Ducs de Bretagne, a formidable fortress that served as the residence of the Dukes of Brittany for centuries. As we explore the castle's architecture and artifacts, you will gain a deeper understanding of the political and social dynamics that shaped the city's past.\nNext, we will venture to the Machines de l'Île, an ambitious art installation that showcases the city's industrial heritage through whimsical and imaginative mechanical sculptures. This is not just an attraction, but an exploration of the city's identity.\nWe will also visit the Musée Jules Verne, dedicated to the famous science fiction author, who was born in Nantes. Here, you will discover the man behind the legend, his manuscripts, personal items, and illustrations, and appreciate the contributions he made to the genre.\nThe tour also includes a visit to the Parc des Chantiers, where you will find the remains of the shipyards that once dominated the city's economy. This park is not only a great place to explore the city's industrial heritage but also offers a chance to experience the natural beauty of the city.\nNantes is also renowned for its impressive squares and beautiful shopping arcades, such as the Passage Pommeraye, an elegant 19th-century shopping arcade and the Place Royale, home to the beautiful Église Notre-Dame-de-Bon-Port. This tour is perfect for history buffs, art lovers, and anyone who wants to gain a deeper appreciation of Nantes' unique culture and atmosphere."
+      },
+      "geometry": {
+        "coordinates": [-1.56698, 47.21483],
+        "type": "Point"
+      }
+    },
+    {
+      "id": "74a90ac2-b0d9-49d3-a7df-93a2bcabecaf",
+      "properties": {
+        "title": "Liège",
+        "description": "Explore the rich history and culture of Liège, a city in the heart of Belgium. This audio tour will take you on a journey through some of the city's most iconic landmarks, starting with the Montagne de Bueren, a 374 steps stairway built in 1881, which offers breathtaking views of the city.\nNext, we'll take you to the Liège Hackerspace, a creative community of makers, hackers, and inventors, where you'll learn about the city's vibrant tech scene.\nYou'll also visit the Rue Têtu, a picturesque street known for its traditional architecture and charming boutiques. \nWe'll also take you to RAVeL Meuse sous Pont Kennedy, a cycling path that takes you along the Meuse river and offers beautiful views of the city.\nYou'll also visit the Parc de la Boverie and its museum, which houses an impressive collection of art and artifacts from the 19th and 20th century.\nLastly, you'll explore the Liège-Guillemins, a beautiful railway station designed by the world-renowned architect Santiago Calatrava.\nThroughout the tour, you'll learn about the history and culture of Liège, from its Roman origins to its industrial past to its present as a vibrant and dynamic city."
+      },
+      "geometry": {
+        "coordinates": [5.567778, 50.637222],
+        "type": "Point"
+      }
+    }
+  ]
+}
