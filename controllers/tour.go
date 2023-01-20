@@ -12,33 +12,42 @@ import (
 func FindTour(c *gin.Context) {
 
 	var tour models.Tour
-
-	if err := models.DB.
-	Preload("Properties").
-	Where("id = ?", c.Param("id")).
-	First(&tour).Error; err != nil {
-    c.JSON(http.StatusBadRequest, gin.H{"error": "Tour not found!"})
-		return
-	}
-
-	data := tour.GetTourJSON()
-
 	var chapters []models.Chapter
 
 	if err := models.DB.
-	Preload("Properties").
-	Where("tour_id = ?", c.Param("id")).
-	Find(&chapters).Error; err != nil {
-    c.JSON(http.StatusBadRequest, gin.H{"error": "Chapter not found!"})
+		Preload("Properties").
+		Where("id = ?", c.Param("id")).
+		First(&tour).Error; err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Tour not found!"})
 		return
 	}
 
-	chaptersData := make([]*models.ChapterJSON, len(chapters))
-	for i, c := range chapters {
-		chaptersData[i] = c.GetChapterJSON()
+	if err := models.DB.
+		Preload("Properties").
+		Where("tour_id = ?", c.Param("id")).
+		Find(&chapters).Error; err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Chapter not found!"})
+		return
 	}
 
-	data.Chapters = chaptersData
+	features := make([]interface{}, len(chapters)+1)
+	tourData := tour.GetTourJSON()
 
-	c.JSON(http.StatusOK, data)
+	for i := range features {
+		if i == 0 {
+			features[i] = tourData
+		} else {
+			features[i] = chapters[i-1].GetChapterJSON()
+		}
+	}
+
+	resp := struct {
+		Type     string        `json:"type"`
+		Features []interface{} `json:"features"`
+	}{
+		Type:     "FeatureCollection",
+		Features: features,
+	}
+
+	c.JSON(http.StatusOK, resp)
 }

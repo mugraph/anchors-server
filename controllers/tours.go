@@ -12,9 +12,8 @@ import (
 func FindTours(c *gin.Context) {
 	var tours []models.Tour
 	models.DB.
-	Preload("Properties").
-	Preload("Chapters").
-	Find(&tours)
+		Preload("Properties").
+		Find(&tours)
 
 	data := make([]*models.TourJSON, len(tours))
 	for i, t := range tours {
@@ -22,10 +21,10 @@ func FindTours(c *gin.Context) {
 	}
 
 	resp := struct {
-		Type string `json:"type"`
+		Type  string             `json:"type"`
 		Tours []*models.TourJSON `json:"features"`
-	} {
-		Type: "FeatureCollection",
+	}{
+		Type:  "FeatureCollection",
 		Tours: data,
 	}
 

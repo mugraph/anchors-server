@@ -19,8 +19,8 @@ func FindChapters(c *gin.Context) {
 	// Preload associated Models
 	// Find Chapters
 	models.DB.
-	Preload("Properties").
-	Find(&chapters)
+		Preload("Properties").
+		Find(&chapters)
 
 	data := make([]*models.ChapterJSON, len(chapters))
 	for i, c := range chapters {
@@ -28,10 +28,10 @@ func FindChapters(c *gin.Context) {
 	}
 
 	resp := struct {
-		Type string `json:"type"`
+		Type     string                `json:"type"`
 		Chapters []*models.ChapterJSON `json:"features"`
-	} {
-		Type: "FeatureCollection",
+	}{
+		Type:     "FeatureCollection",
 		Chapters: data,
 	}
 
