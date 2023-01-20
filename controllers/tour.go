@@ -5,9 +5,36 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/mugraph/anchors-server/models"
+	"github.com/paulmach/orb"
 )
 
 // Get /tour/:id
+
+type FeatureCollection struct {
+	Type     string        `json:"type"`
+	BBox		 []float64		 `json:"bbox"`
+	Features []interface{} `json:"features"`
+}
+
+func calculateBoundingBox(chapters []models.Chapter) []float64 {
+	var points []orb.Point
+
+	for i := range chapters {
+		lat := chapters[i].GetChapterJSON().Geometry.GetPointModel().Latitude
+		lon := chapters[i].GetChapterJSON().Geometry.GetPointModel().Longitude
+		points = append(points, orb.Point{lon, lat})
+	}
+	
+	// Create a MultiPoint from the point geometries
+	multiPoint := orb.MultiPoint(points)
+
+	// Calculate the bounding box of the MultiPoint
+	bBox := multiPoint.Bound()
+	bounds := []float64{bBox.Min.Y(), bBox.Min.X(), bBox.Max.Y(), bBox.Max.X()}
+
+	return bounds
+
+}
 
 func FindTour(c *gin.Context) {
 
@@ -41,11 +68,9 @@ func FindTour(c *gin.Context) {
 		}
 	}
 
-	resp := struct {
-		Type     string        `json:"type"`
-		Features []interface{} `json:"features"`
-	}{
+	resp := FeatureCollection{
 		Type:     "FeatureCollection",
+		BBox: 		calculateBoundingBox(chapters),
 		Features: features,
 	}
 
