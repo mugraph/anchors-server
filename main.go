@@ -28,13 +28,13 @@ func main() {
 	router.Use(CORSMiddleware())
 
 	models.ConnectDatabase()
+	models.Populate(models.DB)
 
 	router.GET("/chapters", controllers.FindChapters)
 	router.POST("/chapters", controllers.CreateChapter)
 
 	router.GET("/tours", controllers.FindTours)
 	router.GET("/tour/:id", controllers.FindTour)
-	router.GET("/parent/:id", controllers.FindParent)
 
 	router.Run()
 }

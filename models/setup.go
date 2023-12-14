@@ -25,11 +25,6 @@ func ConnectDatabase() {
 	database.AutoMigrate(&Tour{}, &Chapter{}, &Properties{})
 
 	DB = database
-	sceneCount := int64(0)
-	database.Model(&Scene{}).Count(&sceneCount)
-	if sceneCount == 0 {
-		Populate(database)
-	}
 }
 
 func Populate(database *gorm.DB) {
