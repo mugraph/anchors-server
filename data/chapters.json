@@ -24,6 +24,7 @@
         "coordinates": [11.327372387357173, 43.31920788856712]
       },
       "properties": {
+        "id": "658547b7-bb48-4098-bfde-3e02f3f58222",
         "title": "Fontebranda",
         "description": "Fontebranda is a historic site located in the heart of the city. The site is home to a medieval fountain, Fontebranda, that dates back to the 13th century. The fountain was originally built as a source of fresh water for the city's residents. The fountain's architectural style is a blend of Romanesque and Gothic elements and features intricate carvings and sculptures. Fontebranda is a popular spot for tourists and locals alike to take in the rich history and unique architecture of the area."
       }
@@ -292,6 +293,104 @@
         "title": "Place Royale",
         "description": "Appreciate the beauty and history of Nantes at the Place Royale, a beautiful square home to the Église Notre-Dame-de-Bon-Port, one of the most beautiful churches in Nantes."
       }
-    }
+    },
+    {
+      "id": "3c53a71d-7f52-4eb7-b3c4-8d29e9c754fb",
+      "tour_id": "a6c79f2b-8c79-4f1a-94e0-7c7e9bde8e45",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.405, 51.229]
+      },
+      "properties": {
+        "id": "4a0e5ee0-56e7-45c7-9429-9da4d50052c2",
+        "title": "Museum aan de Stroom (MAS)",
+        "description": "Start at MAS, an architectural gem offering panoramic views of Antwerp. Explore exhibits showcasing the city's global port role and cultural connections. An enriching experience awaits."
+      }
+    },
+    {
+      "id": "4fd460ef-bd9b-4be6-ba40-7b5eb62e155f",
+      "tour_id": "a6c79f2b-8c79-4f1a-94e0-7c7e9bde8e45",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.421, 51.218]
+      },
+      "properties": {
+        "id": "66ef2124-02a4-459d-8397-9448b64307a6",
+        "title": "Central Station",
+        "description": "Antwerp's stunning Central Station, a masterpiece of railway architecture. Marvel at its grandeur and learn about its history as a major transportation hub."
+      }
+    },
+    {
+      "id": "b916c35d-b24a-40b3-a1c4-488f72ed66e1",
+      "tour_id": "a6c79f2b-8c79-4f1a-94e0-7c7e9bde8e45",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.4288415, 51.207037]
+      },
+      "properties": {
+        "id": "f75a4d7a-0c6c-4d38-8ee2-c4884c52367a",
+        "title": "Zurenborg",
+        "description": "Discover the vibrant Zurenborg neighborhood, known for its unique character and architecture. Stroll through charming streets and soak in the eclectic atmosphere of this lively district."
+      }
+    },
+    {
+      "id": "6d4a1ecf-c51b-4b25-aa2b-6e1f19a67b9b",
+      "tour_id": "a6c79f2b-8c79-4f1a-94e0-7c7e9bde8e45",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.433369, 51.2028733]
+      },
+      "properties": {
+        "id": "83a676a7-c4c8-4d7a-9a8d-56d1c2de6549",
+        "title": "Zonnebloem House",
+        "description": "Visit Zonnebloem House, a remarkable example of Art Nouveau architecture. Explore the intricate details and history of this well-preserved gem in Antwerp."
+      }
+    },  
+    {
+      "id": "3d6a97f9-4d7d-4824-8546-23d2a4a0c215",
+      "tour_id": "a6c79f2b-8c79-4f1a-94e0-7c7e9bde8e45",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.3989408, 51.2202678]
+      },
+      "properties": {
+        "id": "26f7d7b2-3f55-4fe2-a883-ee0d509034bc",
+        "title": "Cathedral of Our Lady",
+        "description": "Visit the Cathedral of Our Lady, home to masterpieces by Peter Paul Rubens. Explore the artistic and historical significance of this iconic cathedral that dates back to the medieval period."
+      }
+    },
+    {
+      "id": "9e8f37ac-9a3d-4b78-b67e-74d9991473a1",
+      "tour_id": "a6c79f2b-8c79-4f1a-94e0-7c7e9bde8e45",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.3976434, 51.22114]
+      },
+      "properties": {
+        "id": "c8a82ebd-28d9-46cb-89a6-2fc8a3077d5e",
+        "title": "Grote Markt",
+        "description": "The central square in Antwerp, Grote Markt is surrounded by stunning guild houses and features the Brabo Fountain. Learn about the medieval trading history and marvel at the beauty of this historic square."
+      }
+    },
+    {
+      "id": "5125a0a4-d6e2-4b88-a6bb-893c94d0670f",
+      "tour_id": "a6c79f2b-8c79-4f1a-94e0-7c7e9bde8e45",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.388, 51.221]
+      },
+      "properties": {
+        "id": "be7e87b8-b0b8-4392-b8c4-0c3b74e23d5a",
+        "title": "Sint-Annatunnel",
+        "description": "Explore the Sint-Annatunnel, a unique underground passage beneath the Scheldt River. Learn about its history and enjoy the picturesque views of the city. The tunnel is accessible from Van Eeden Premetro Station."
+      }
+    }     
   ]
 }

@@ -33,6 +33,16 @@
         "coordinates": [5.567778, 50.637222],
         "type": "Point"
       }
-    }
+    },
+    {
+      "id": "a6c79f2b-8c79-4f1a-94e0-7c7e9bde8e45",
+      "properties": {
+        "title": "Antwerp",
+        "description": "Embark on a captivating journey through the cultural and architectural wonders of Antwerp. This tour showcases the city's rich history, artistic treasures, and vibrant neighborhoods. Begin your exploration at the Museum aan de Stroom (MAS), an architectural gem offering panoramic views of Antwerp. Immerse yourself in exhibits that highlight the city's global port role and cultural connections, setting the stage for an enriching experience.\n\nContinue to Antwerp's stunning Central Station, a masterpiece of railway architecture. Marvel at its grandeur and learn about its history as a major transportation hub that welcomes visitors with elegance and charm. Next, discover the vibrant Zurenborg neighborhood, known for its unique character and architecture. Stroll through charming streets and soak in the eclectic atmosphere of this lively district.\n\nVisit Zonnebloem House, a remarkable example of Art Nouveau architecture. Explore the intricate details and history of this well-preserved gem in Antwerp. Proceed to the Cathedral of Our Lady, home to masterpieces by Peter Paul Rubens. Explore the artistic and historical significance of this iconic cathedral that dates back to the medieval period.\n\nExplore the central square in Antwerp, Grote Markt, surrounded by stunning guild houses and featuring the Brabo Fountain. Learn about the medieval trading history and marvel at the beauty of this historic square. Conclude your tour with a visit to the Sint-Annatunnel, a unique underground passage beneath the Scheldt River. Learn about its history and enjoy picturesque views of the city, accessible from Van Eeden Premetro Station."      },
+      "geometry": {
+        "coordinates": [4.399708, 51.219448],
+        "type": "Point"
+      }
+    }    
   ]
 }
